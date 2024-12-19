@@ -1,0 +1,52 @@
+@use 'config/reset';
+@use 'section/products';
+@use 'config/media';
+@use 'config/color';
+
+body {
+    background-color: color.$backgroundColor;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: color.$headerColor;
+    position: sticky;
+    top: 0;
+    left: 0;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px 0;
+    }
+}
+
+
+.menu {
+    display: flex;
+
+    li {
+        font-weight: bold;
+        margin-left: 24px;
+    }
+
+    li a {
+        color: color.$blankColor;
+        text-decoration: none;
+    }
+}
+
+section {
+    padding: 56px 0;
+}
+
