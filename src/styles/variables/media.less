@@ -1,0 +1,31 @@
+
+@breakpointMobile: ~"(max-width: 767px)";
+@breakpointTablet: ~"(min-width: 768px) and (max-width: 1023px)";
+
+
+@media @breakpointTablet {
+    .container {
+        max-width: 80%;
+    }
+
+    .products {
+        grid-template-columns: repeat(2, 48.5%);
+        column-gap: 3%;
+    }
+}
+
+@media @breakpointMobile {
+    h2 {
+        padding: 5% 0;
+    }
+    
+    .products {
+        display: block;
+        padding: 5%;
+    }
+
+    .product-item  {
+        margin-bottom: 32px;
+    }
+}
+
